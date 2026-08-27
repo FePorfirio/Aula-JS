@@ -1,0 +1,131 @@
+    :root {--color-primary: #e63946;
+    --color-primary: #c1272d;
+    --color-accent: #f4a300;
+    --color-dark: #201a17;
+    --colorlight: #fff7ed;
+    --color-gray: #6b7280;
+    --radius: 14px;
+    --font-titulo: "Anton", Impact, sans-serif;
+    --font-base: "inter", Roboto, helvetica, arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-base);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family:var(--font-titulo);
+    font-weight: 400;
+    letter-spacing: 0.5 lx;
+}
+a {text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style:none;
+}
+img {
+    max-width:100%;
+    display:block;
+}
+.botao-nav {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 10px 22px;
+}
+
+.cabecalho-site {
+    background: var(--color-dark);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.barra-navegacao {
+    max-width: 1100px;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+}
+
+.logo {
+    font-family: var(--font-titulo);
+    font-size: 1.4rem;
+    color:#fff;
+    letter-spacing: 1px;
+}
+
+.links-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.links-menu a {
+    color:#e8d9cd;
+    font-weight: 500;
+}
+
+.links-menu a:hover{
+    color:#fff;
+    font-size: 1.1rem;
+}
+.botao-primario {
+    background: var(--color-accent);
+    color: var(--color-dark);
+    padding: 10px 22px;
+}
+
+.botao-primario hover{
+    box-shadow: 0 8px 20px #rgba(244, 163, 0, 0.4);
+}
+
+.destaque {
+    background: linear-gradient(135deg, var(**var(--color-dark),#3a241a));
+    width:100%;
+    padding: 80px 24px;
+}
+
+.destaque-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    color:#fff;
+}
+
+.destaque-texto {
+flex:1 1 400px;
+}
+
+.destaque  h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color:var(--color-accent)
+}
+
+.destaque p {
+    font-size: 1.15rem;
+    color:#e8d9cd;
+    margin: 480px;
+    margin-bottom: 32px;
+}
+.destaque-imagem {
+    max-width: 300px;
+    flex: 1 1 260px
+}
+.destaque-imagem img{
+    width: 100%;
+    height:auto;
+}
