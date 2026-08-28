@@ -1,27 +1,20 @@
-//5 EXERCICIO DE REPETIÇÃO
-//1 a 100
-const numeroSecreto = Math.floor( Math.random()*100) + 1;
-let palpite;
-let tentativas = 0;
 
-do {
- console.log("Advinhe um numero entre 1 e 10")
-//alert(Math.floor)(Math random()*100) + 1
+const numero = Number(prompt("CALCULADORA: Informe o primeiro numero"));
+if (Number.isNaN(numero)){
+    alert("Numero Inválido!")
+    const numero1 = Number(prompt("Informe a operação desejada.(+, -, * ou /)"))
+    const numero2 = Number(prompt("Informe o segundo numero."))
 
-    palpite = Number(prompt("Adivinhe o numero secreto entre 1 e 100:"));
-    tentativas++;
-
-    if (Number.isNaN(palpite)) {
-        alert("Digite um número válido.")
+    if (operacao ==="+"){
+        alert(numero1+numero2);
     }
-    else if (palpite === numeroSecreto) {
-        alert("ACERTOU!!!"+ "Em" + tentativas + "tentativas.")
-        alert("Numero de tentativas: " + tentativas)
-    } else {
-        alert("Voce errou! Tente novamente.");
+    else if (operacao ==="-"){
+        alert(numero1-numero2)
     }
-
-} while (palpite !== numeroSecreto);
-
-
-
+    else if (==="*"){
+        alert(numero1*numero2)
+    }
+    else if (==="/"){
+        alert(numero1/numero2)
+    }
+}

@@ -92,6 +92,77 @@ do {
     }
 
 } while (palpite !== numeroSecreto);
+  
+//FOR - REPETIÇÃO LIMITADA A UM PARÂMETRO
+
+//EX.1
+for (let index = 1; index < 10; index++) {
+    
+    console.log(index)
+}
+//EX.2
+//EXIBA NUMEROS PARES DE 0 A 20.
+
+console.log("Numeros pares de 0 a 20:/n")
+
+//pares=pares+2.
+for(let pares=0; pares <=20; pares +=2) {
+    console.log(pares)
+}
+
+//CONTAGEM REGRESSIVA
+//conta --
+//=
+//conta - conta
+for (let conta=10; conta >=1; conta --){
+    console.log(conta+ "...")
+}
+console.log("Decolar!")
+
+//CRIE UM PROGRAMA QUE MOSTRE OS NUMEROS DE 1 A 3.
+/*
+SAÍDA ESPERADA:
+111   
+222   
+333
+
+DICA: Use um for para controlar os numeros e outro for dentro para repretir cada número.
+*/
+for (let numero=1; numero <=3; numero ++){
+let resultado ="";
+    for(let vezes = 1; vezes <=3; vezes++){
+        resultado += numero+""
+    }
+    console.log(resultado)
+}
+// /*
+// DESENHE PIRAMIDES DE ASTERISTICOS
+
+// SAÍDA:
+// *
+// **
+// ***
+// ****
+// *****
 
 
+ for (let num=1; num<=10; num++){
+     let resultado="";
+     for (let vezes = 1; vezes<=num; vezes++){
+         resultado +="*"
+     }
+     console.log(resultado)
+ }
+//  1. Contagem de 1 a 10
+// Crie um programa que exiba todos os números de 1 até 10, um por linha.
+for(let num=1; num<=10; num++){
+    console.log(num)
+}
+// 2. Tabuada de um número
+// Solicite um número ao usuário e exiba sua tabuada de multiplicação de 1 a 10.
+// Exemplo para o número 5:
+// 5 x 1 = 5
+// 5 x 2 = 10
+// ...
+// 5 x 10 = 50
 
