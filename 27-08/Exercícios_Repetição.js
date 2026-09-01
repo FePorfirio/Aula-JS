@@ -166,3 +166,36 @@ for(let num=1; num<=10; num++){
 // ...
 // 5 x 10 = 50
 
+const numero = Number(prompt("Digite um numero:"))
+
+if(Number.isNaN(numero)){
+    console.log("Digite apenas numeros")
+}
+else{
+    console.log(`\n tabuada do ${numero}: \n`)
+
+    for(let i = 1;i <= 10; i++){
+        const resultado = numero * i;
+        console.log(`${numero} x ${i} = ${resultado}`)
+    }
+}
+
+
+// 3. Soma dos primeiros N números
+// Solicite um número inteiro positivo ao usuário e calcule a soma de todos os números de 1 até esse valor.
+// Exemplo:
+// Entrada: 5 
+// Saída: 15 
+// (1 + 2 + 3 + 4 + 5 = 15)
+
+const numero = Number (prompt("Digite um numero inteiro positivo:"));
+
+  let soma = 0;
+for (let i = 1; i <= numero; i++) {
+  soma += i;
+}
+console.log("A soma e: " + soma);
+
+// 4. Números pares de 1 a 50
+// Exiba todos os números pares entre 1 e 50, um por linha.
+
