@@ -42,6 +42,7 @@ console.log(nomes)  //reverse inverte a ordem dos nomes
 
 
 
+
 const alunos = [
 {aluno:"Carina", nota:4},
 {aluno:"Caio", nota:7},
